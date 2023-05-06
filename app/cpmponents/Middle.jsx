@@ -3,16 +3,18 @@ import Upload from "./Upload";
 import Postcard from "./Postcard";
 
 const Middle = () => {
-  const styles = {
-    maxHeight: "500px",
-  };
+  // const styles = {
+  //   maxHeight: "500px",
+  // };
 
   return (
-    <div className="flex-1 flex-col gap-3 overflow-y-auto" style={styles}>
+    <div className="">
+    <div className="flex-1 flex-col gap-3 " >
       <Upload />
       <Postcard />
       <Postcard />
       <Postcard />
+    </div>
     </div>
   );
 };

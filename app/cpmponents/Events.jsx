@@ -4,7 +4,7 @@ import Upcoming from "./Upcoming";
 const Events = () => {
   return (
     <div>
-      <div className="px-6 py-3 flex flex-col gap-3">
+      <div className="px-6 py-3 flex flex-col gap-3 h-screen justify-between">
         <div className="h-56 bg-slate-900 rounded-3xl">
           <div className=" relative ">
             <img

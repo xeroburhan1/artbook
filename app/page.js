@@ -5,9 +5,11 @@ import Events from "./cpmponents/Events";
 import Participating from "./cpmponents/Participating";
 import Middle from "./cpmponents/Middle";
 
-const App = () => {
+const Home = () => {
   return (
-    <div className="App main bg-gradient-to-r rounded-t-3xl from-background1 to-background2 w-full h-screen flex">
+    <div className="bg-slate-800 ">
+    <div className="ml-64 mr-64 bg-slate-800 ">
+    <div className="App main bg-gradient-to-r rounded-t-3xl from-background1 to-background2 w-full h-screen flex ">
       <Sidebar />
       <div className="middle bg-gradient-to-r from-background1 to-background2 w-9/12 h-screen">
         <Topbar />
@@ -28,7 +30,7 @@ const App = () => {
               </h1>
             </div>
 
-            <div className="flex">
+            <div className="container flex h-5/6 w-full overflow-auto justify-center">
               <Middle />
             </div>
           </div>
@@ -39,7 +41,9 @@ const App = () => {
         <Events />
       </div>
     </div>
+    </div>
+    </div>
   );
 };
 
-export default App;
+export default Home;
