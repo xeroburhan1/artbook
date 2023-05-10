@@ -1,17 +1,18 @@
 import React from "react";
 
-const Postcard = () => {
+const Postcard = ({data}) => {
+  //console.log(data)
   return (
     <div>
       <div className="my-3 mx-auto bg-white h-80 w-96 rounded-3xl ">
         <div className=" flex flex-row gap-4 pt-2 ">
           <img
-            src="/assets/image 1.png"
+            src={data.owner.photo.url}
             alt=""
             className=" w-14 ml-10 rounded-full "
           />
           <div className=" flex flex-col">
-            <h1 className=" mt-2  text-xl text-black font-bold">Shamim.</h1>
+            <h1 className=" mt-2  text-xl text-black font-bold">{data.owner.fullName}</h1>
             <div className=" flex flex-row">
               <span className=" -mt-1    ">10 mins</span>
               <button className="bg-black  rounded-3xl text-white text-xs h-4 w-14  ml-2 mt-1 ">
@@ -53,9 +54,9 @@ const Postcard = () => {
 
         <div>
           <img
-            src="/assets/image 3.png"
+            src={data.image.url}
             alt=""
-            className=" w-80 mt-4 ml-8 h-48 "
+            className=" w-80 mt-4 ml-8 h-48 rounded-3xl"
           />
         </div>
 
@@ -74,9 +75,9 @@ const Postcard = () => {
               d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
             />
           </svg>
-          <span className=" mr-40 mt-3 text-xl font-bold">120</span>
+          <span className=" mr-40 mt-3 text-xl font-bold">0</span>
           <button className="bg-purple-500  rounded-3xl text-white text-xs h-7 w-24 mt-3 mr-8  ">
-            Browse
+            {data.price} $
           </button>
         </div>
       </div>

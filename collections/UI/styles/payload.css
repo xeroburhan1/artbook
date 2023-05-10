@@ -1,0 +1,66 @@
+
+.logo{
+    width: 20%;
+    height: 20%;
+}
+
+.icon{
+    width: 2em;
+    height: 2em;
+}
+
+.Orders{
+    display: flex;
+    gap: 10px;
+
+}
+
+.today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-elevation-0);
+    width: 300px;
+    height: 120px;
+    box-shadow: 5px 5px 2px 0px var(--theme-elevation-800);
+   -webkit-box-shadow: 5px 5px 2px 0px var(--theme-elevation-800);
+    -moz-box-shadow: 5px 5px 2px 0px var(--theme-elevation-800);
+    border-radius: 15px;
+}
+
+.container{
+    margin-bottom: 30px;
+}
+
+.iconwidth{
+    height: 40px;
+    width: 40px;
+    
+}
+
+.iconweek{
+    height: 30px;
+    width: 30px;
+    margin-top: -6px;
+    
+}
+.textincard{
+    margin-top: 25px;
+    margin-left: 2px;
+}
+
+.makeitflex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+}
+
+
+/* .h2edit{
+    margin: 0 0 -1.0769230769rem;
+}
+
+.insidecard{
+    margin-top: 1rem;
+} */
